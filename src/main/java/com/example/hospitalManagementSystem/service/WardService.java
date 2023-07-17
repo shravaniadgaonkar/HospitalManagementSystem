@@ -17,5 +17,9 @@ public class WardService {
 	public List<WardEntity> getWardList(){
 		return wardRepository.findAll();
 	}
+	
+	public WardEntity saveWard(WardEntity wardEntity) {
+		return wardRepository.save(wardEntity);
+	}
 
 }

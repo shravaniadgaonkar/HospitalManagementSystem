@@ -17,5 +17,9 @@ public class StatusService {
 	public List<StatusEntity> getAllStatus(){
 		return statusRepository.findAll();
 	}
+	
+	public StatusEntity saveStatus(StatusEntity statusEntity) {
+		return statusRepository.save(statusEntity);
+	}
 
 }
